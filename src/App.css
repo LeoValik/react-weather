@@ -7,7 +7,7 @@ body {
 }
 
 .wrapper {
-  background: linear-gradient(to right, #e67e22, #e74c3c);
+  background: linear-gradient(to right, #cc9214, #db6131);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -24,13 +24,13 @@ body {
 
 .title-container {
   height: 90vh;
-  background: url("img/bg.jpg") center center no-repeat;
+  background: url("img/rainbow.jpg") center center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #000;
+  color: #fff;
 }
 
 .title-container__title {
@@ -124,4 +124,39 @@ button:active {
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: 200;
+}
+
+@media (max-width: 1325px) {
+  .main {
+    width: 90%;
+  }
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1199px) and (max-width: 999px) {
+  input[type="text"] { 
+    width: 90%;
+  }
+  button {
+    width: 90%;
+  }
+  .weather__info {
+    width: 90%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1199px) and (max-width: 767px) {
+  .title-container__title {
+    font-size: 30px;
+  }
+  .title-container__subtitle {
+    font-size: 16px;
+  }
+  .weather__info {
+    width: 90%;
+    font-size: 16px;
+  }
 }
