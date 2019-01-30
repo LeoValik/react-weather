@@ -24,7 +24,7 @@ class App extends React.Component {
     const data = await api_call.json();
     // If city & country returns true
     if(city && country) {
-      console.log(data);
+      
       this.setState({
         tempature: data.main.temp,
         city: data.name,
